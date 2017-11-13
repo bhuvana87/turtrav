@@ -1,0 +1,608 @@
+<html>
+<head>
+
+  <title>TravTur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+ <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+ <div class="navbar-fixed">
+ <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#">UAE</a></li>
+  <li><a href="#">India</a></li>
+  <li><a href="#">Singapore</a></li>
+  <li><a href="#">Italy</a></li>
+  <li class="divider"></li>
+  <li><a href="#">USA</a></li>
+</ul>
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo"><img src="img/trav-logo.png" alt="TravTur"></a>
+            <ul id="nav-mobile" class="right side-nav">
+              	<!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-globe"></i> Countries</a></li>
+        <li><a href="#login-modal" class="waves-effect waves-light modal-trigger"><i class="fa fa-user"></i> Login</a></li>
+		<li><a href="#signup-modal" class="waves-effect waves-light modal-trigger"><i class="fa fa-pencil"></i> Sign Up</li>
+            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="inner-banner tours-list">
+<div class="inner-banner-overlay">
+<div class="container center-align">
+<div class="home-search">
+<div class="row">
+<div class="input-field col l6 s12">
+        <input id="event_name" type="text" class="validate" placeholder="Where are you going...">
+      </div>
+	  <div class="input-field col l3 s12">
+        <input type="date" class="datepicker" class="validate"  placeholder="When...">
+      </div>
+<div class="col m2 s12">
+<a class="waves-effect waves-light btn" href="list-tours.html"><i class="fa fa-search"></i></a>
+</div>
+
+</div>
+</div>
+
+		
+
+
+</div>
+</div>
+</div>
+
+<div class="main-content">
+<div class="tour-heading">
+<div class="container">
+<p>Tours and Things To Do in Dubai
+<i>We Found: 240 Tours</i>
+</p>
+</div>
+</div>
+<section class="grey lighten-2 pt20">
+<div class="container">
+<div class="tours-search-filters">
+<div class="row no-margin">
+<div class="col l3 m6 s12 mb20">
+<div class="prepend-icon">
+<input type="date" class="datepicker no-margin" value="24 December, 2015">
+<i class="fa fa-calendar"></i>
+</div>
+</div>
+<div class="col l3 m6 s12 mb20">
+
+ <!-- Dropdown Trigger -->
+<a class='dropdown-button btn' href='#' data-activates='categories'><i class="fa fa-bicycle"></i>  Categories <i class="fa fa-angle-down"></i></a>
+<!-- Dropdown Structure -->
+  <ul id='categories' class='dropdown-content'>
+    <li><a href="#!">Tours (30)</a></li>
+    <li><a href="#!">Activities (14)</a></li>
+    <li><a href="#!">Culinary & Nightlife (12)</a></li>
+	<li><a href="#!">Sports(5)</a></li>
+	<li><a href="#!">Tickets (3)</a></li>
+  </ul>
+</div>
+<div class="col l3 m6 s12 mb20">
+ <!-- Dropdown Trigger -->
+<a class='dropdown-button btn' href='#' data-activates='destinations'><i class="fa fa-flag"></i>  Destinations <i class="fa fa-angle-down"></i></a>
+<!-- Dropdown Structure -->
+  <ul id='destinations' class='dropdown-content'>
+  <li><span>United Arab Emirates</span></li>
+    <li><a href="#!">Abudhabi</a></li>
+    <li><a href="#!">Dubai</a>
+	<ul>
+	 <li><a href="#!">Burj Khalifa</a></li>
+	</ul>
+	</li>
+    <li><a href="#!">Musandam Peninsula</a></li>
+	<li><a href="#!">Sharjah</a></li>
+	<li><a href="#!">Rasalkhaima</a></li>
+  </ul>
+</div>
+<div class="col l3 m6 s12 mb20">
+ <!-- Dropdown Trigger -->
+<a class='dropdown-button btn' href='#' data-activates='languages'><i class="fa fa-language"></i> Languages <i class="fa fa-angle-down"></i></a>
+<!-- Dropdown Structure -->
+  <ul id='languages' class='dropdown-content'>
+  <li><span>Tour Languages</span></li>
+    <li><a href="#!">English</a></li>
+	<li><a href="#!">French</a></li>
+	<li><a href="#!">German</a></li>
+	<li><a href="#!">Italian</a></li>
+	<li><a href="#!">Spanish</a></li>
+    <li><a href="#!">Emirati</a></li>
+	 <li><a href="#!">Algerian</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="white-wrapper ptb20 cont-filters">
+<div class="container">
+<div class="row no-margin">
+  <div class="col m3 s12 mb20">
+  <div class="input-field black">
+    <select>
+      <option value="" selected>Currency</option>
+      <option value="1">India: (INR)</option>
+      <option value="2">United Arab Emirates: (AED)</option>
+      <option value="3">United States of America: (USD)</option>
+	  <option value="4">Australia: (AUD)</option>
+	  <option value="5">China: (CNY)</option>
+    </select>
+	<i class="fa fa-angle-down"></i>
+    </div>
+  </div>
+<div class="col m9 s12 right-align">
+<div class="btn-group">
+<a class="waves-effect waves-light btn"><i class="fa fa-money"></i> Price</a><a class="waves-effect waves-light btn"><i class="fa fa-clock-o"></i> Duration</a><a class="waves-effect waves-light btn"><i class="fa fa-star"></i>  Popularity</a>
+</div>
+</div>
+</div>
+<div class="grid-listing">
+<div class="row">
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/boat-tour.jpg" alt="">
+<div class="list-item-cont">
+<h3>Sightseeing Boat Tour</h3>
+<h6><i class="fa fa-map-marker"></i> Dubai Marina</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 294</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 90 minutes
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/dubai-city.jpg" alt="">
+<div class="list-item-cont">
+<h3>Dubai City Tour</h3>
+<h6><i class="fa fa-map-marker"></i> Dubai</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 120</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 4 Hours
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/desert-safari.jpg" alt="">
+<div class="list-item-cont">
+<h3>4x4 Desert Safari</h3>
+<h6><i class="fa fa-map-marker"></i> Dubai</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 100</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 4 Hours
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/top-burjkhalifa.jpg" alt="">
+<div class="list-item-cont">
+<h3>Top of Burj Khalifa</h3>
+<h6><i class="fa fa-map-marker"></i> Dubai</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 120</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 1-2 Hours
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/seaplane.jpg" alt="">
+<div class="list-item-cont">
+<h3>Seaplane Tour</h3>
+<h6><i class="fa fa-map-marker"></i> Abu Dhabi</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 1,255</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 2 Hours
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/yaswaterworld.jpg" alt="">
+<div class="list-item-cont">
+<h3>Yas Water World</h3>
+<h6><i class="fa fa-map-marker"></i> Abu Dhabi</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 253</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 1 day
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/musandam.jpg" alt="">
+<div class="list-item-cont">
+<h3>Mussandam Sea Safari</h3>
+<h6><i class="fa fa-map-marker"></i> Dubai</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 294</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 12 Hours
+</div>
+</div>
+
+</div>
+</div>
+<div class="col l3 m6 s12">
+<div class="list-item z-depth-1">
+<a class="grid-overlay" href="tour-detail.html">
+<span><i class="fa fa-eye"></i> View Details</span>
+</a>
+<img src="img/dining-emiratespalace.jpg" alt="">
+<div class="list-item-cont">
+<h3>Dining At Emirates Palace</h3>
+<h6><i class="fa fa-map-marker"></i> Abu Dhabi</h6>
+<div class="row no-margin">
+<div class="col m7 s7">
+<span class="price-holder">
+From <span>AED 477</span>
+</span>
+</div>
+<div class="col m5 s5 right-align">
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<i class="fa fa-star-o"></i>
+</div>
+</div>
+</div>
+<div class="duration">
+<i class="fa fa-clock-o"></i> <strong>Duration:</strong> 3 Hours
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="load-contents"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+</div>
+</div>
+
+
+
+ </div>
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+                <div class="col l4 m6 s12">
+                <a id="logo-container" href="#" class="brand-logo">Trav<span>Tur</span></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum tempus ante, nec varius neque aliquam eu. Sed laoreet neque in risus varius aliquet. </p>
+				<div class="social-links"><a href="#" class="waves-effect"><i class="fa fa-facebook"></i></a> <a href="#" class="waves-effect"><i class="fa fa-twitter"></i></a> <a href="#" class="waves-effect"><i class="fa fa-linkedin"></i></a> <a href="#" class="waves-effect"><i class="fa fa-google-plus"></i></a></div>
+              </div>
+              <div class="col l2 m6 s12">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="about.html"><i class="fa fa-angle-right"></i>About</a></li>
+                  <li><a href="faq.html"><i class="fa fa-angle-right"></i>FAQ</a></li>
+				  <li><a href="careers.html"><i class="fa fa-angle-right"></i>Careers</a></li>
+				  <li><a href="blogs.html"><i class="fa fa-angle-right"></i>Blog</a></li>
+                  <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
+                 <li><a href="termsofuse.html"><i class="fa fa-angle-right"></i>Terms of Use</a></li>
+				   <li><a href="sitemap.html"><i class="fa fa-angle-right"></i>Sitemap</a></li>
+                </ul>
+              </div>
+			    <div class="col l2 m6 s12 partners">
+                <h5>Partnerships</h5>
+                <ul>
+                  <li><a href="careers.html"><i class="fa fa-angle-right"></i>Work with TravTur</a></li>
+                  <li><a href="become-a-partner.html"><i class="fa fa-angle-right"></i>Become a Partner</a></li>
+                  <li><a href="tour-operators.html"><i class="fa fa-angle-right"></i>Tour Operators</a></li>
+                  
+                </ul>
+				  <h5>Support</h5>
+                <ul>
+                  <li><a href="customer-support.html"><i class="fa fa-angle-right"></i>Customer Support</a></li>
+                  <li><a href="privacypolicy.html"><i class="fa fa-angle-right"></i>Privacy Policy</a></li>
+                  
+                </ul>
+              </div>
+			  <div class="col l4 m6 s12">
+			  <div class="footer-support">
+			  <h4>Have Questions?</h4>
+			  <h4 class="txt-red">+1-200-000-0000</h4>
+			  <h6><i class="fa fa-wrench"></i> <a href="mailto:support@Travtur.com">support@Travtur.com</a></h6>
+			  	  <h6><i class="fa fa-history"></i> 24/7 Dedicated Customer Support</h6>
+			  </div>
+			  </div>
+			
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+           &copy; 2015 TravTur.com | Developed by <a href="http://www.crosswindtechnologies.net" target="_blank">Crosswind Technologies</a>
+            </div>
+          </div>
+        </footer>
+<!-- Login Modal -->
+  <div id="login-modal" class="modal form-modal">
+    <div class="modal-header">
+	<h2 class="modal-title">Login</h2>
+	
+	<div class="close-icn"><a href="#" class="modal-action modal-close"><i class="fa fa-times"></i></a></div>
+	</div>
+    <div class="modal-content center-align">
+  
+	  
+		<div class="row">
+		<div class="col m12 s12">
+		  <a class="waves-effect waves-light btn btn-fb block-level"><i class="fa fa-facebook"></i> Login with Facebook</a>
+		</div>
+		</div>
+	 
+	   <div class="txt-separator">(OR)</div>
+	  
+	 
+	    <div class="login-form">
+	         <div class="row">
+        <div class="input-field col m12 s12">
+          <i class="material-icons prefix">person_pin</i>
+          <input id="username" type="text" class="validate">
+          <label for="username">User Name</label>
+        </div>
+      <div class="input-field col m12 s12">
+          <i class="material-icons prefix">lock</i>
+          <input id="password" type="text" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+	     <div class="row">
+    <div class="col m7 s12 left-align">
+
+      <input type="checkbox" id="chk-signin" />
+      <label for="chk-signin">Keep me signed in</label>
+    
+	</div>
+	<div class="col m5 s12 right-align">
+	<a href="#">Forgot Password?</a>
+	</div>
+  </div>
+  <br>
+  <div class="row">
+  <div class="col m12">
+    <a href="member-home.html" class="modal-action modal-close waves-effect waves-light btn btn-black">Login</a>
+  </div>
+  </div>
+ 
+	   </div>
+</div>
+</div>
+
+<!-- Signup Modal -->
+  <div id="signup-modal" class="modal form-modal">
+    <div class="modal-header">
+	<h2 class="modal-title">Sign up</h2>
+	
+	<div class="close-icn"><a href="#" class="modal-action modal-close"><i class="fa fa-times"></i></a></div>
+	</div>
+    <div class="modal-content center-align">
+  
+	  
+		<div class="row">
+		<div class="col m12 s12">
+		  <a class="waves-effect waves-light btn btn-fb block-level"><i class="fa fa-facebook"></i> Sign up with Facebook</a>
+		</div>
+		</div>
+	 
+	   <div class="txt-separator">(OR)</div>
+	  
+	 
+	    <div class="login-form">
+	         <div class="row">
+        <div class="input-field col m12 s12">
+          <i class="material-icons prefix">person_pin</i>
+          <input id="username" type="text" class="validate">
+          <label for="username">Your Name</label>
+        </div>
+		    <div class="input-field col m12 s12">
+          <i class="material-icons prefix">email</i>
+          <input id="username" type="text" class="validate">
+          <label for="username">Email</label>
+        </div>
+      <div class="input-field col m12 s12">
+          <i class="material-icons prefix">lock</i>
+          <input id="password" type="text" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+	
+  <br>
+  <div class="row">
+  <div class="col m12">
+    <a class="modal-action modal-close waves-effect waves-light btn btn-black">Create My Account</a>
+  </div>
+  </div>
+ 
+	   </div>
+</div>
+</div>
+          
+  <!-- jQuery is required by Materialize to function -->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript">
+    // Initialize collapse button
+  $(".button-collapse").sideNav();
+ $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  </script>
+  <script>
+ $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+	$('.slider').slider();
+	
+  });
+         $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+   $(document).ready(function() {
+    $('select').material_select();
+  });
+    
+  </script>
+
+</body>
+</html>
